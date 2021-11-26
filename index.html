@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/section.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <title>MODAL EJERCICIO</title>
+</head>
+<body>
+    <header>
+        <div class="limite">
+            <figure>
+                <img src="./imagenes/logo.jpg" alt="">
+            </figure>
+        </div>
+    </header>
+    <section>
+        <div class="info">
+            <div class="limite">
+                <h2>Our Team</h2>
+                <h1>A Dedicated Team of Experts</h1>
+                <h3>Passion, experience and a fierce commitment to education are 
+                    the cornerstone of our success in the beauty industry
+                </h3>
+                <p>
+                    We believe that being the largest SPA in the area is not enough
+                        in itself to satisfy the needs of our customers. For this reason
+                        we have built up a staff of specialized  professionals who are proud to
+                        welcome you to our hotel, present What We Do, listen to your needs and 
+                        guarantee well-being and relaxation during your stay at our SPA Resort.
+                    <br><br>
+                        Everyone in our team is a certified specialist capable of delivering a unique
+                        service of quality you won't find anywhere else in modern spa and resort industry.
+                </p>
+                <div class="botones">
+                    <a href="#" class="btn">LEARN MORE</a>
+                    <a href="#" class="btn">VIEW ALL TEAM</a>
+                </div>
+            </div>
+        </div>
+        <div class="team">
+            <div class="limite">
+                <div class="articulos">
+                    <article>
+                        <figure>
+                            <img src="./imagenes/foto1.jpg" alt="">
+                        </figure>
+                        <h4>Jessica Cooper</h4>
+                        <p>Esthetician</p>
+                        <div class="redes">
+                            <span>
+                                <i class="fab fa-facebook-f"></i>
+                            </span>
+                            <span>
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                            <span>
+                                <i class="fab fa-pinterest"></i>
+                            </span>
+                        </div>
+                        <a href="#" class="btn" id="show">GET IN TOUCH</a>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="./imagenes/foto2.jpg" alt="">
+                        </figure>
+                        <h4>Robert Wagner</h4>
+                        <p>Hairdresser</p>
+                        <div class="redes">
+                            <span>
+                                <i class="fab fa-facebook-f"></i>
+                            </span>
+                            <span>
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                            <span>
+                                <i class="fab fa-pinterest"></i>
+                            </span>
+                        </div>
+                        <a id="show2" href="#" class="btn">GET IN TOUCH</a>
+                    </article>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section id="modal" class="modalconte">
+        <div class="estruc-modal">
+            <h1>Contact Us</h1>
+            <p>
+                If you have any questions concerning our services, please fill out the 
+                contact form below.
+            </p>
+            <form action="">
+                <input type="text" placeholder="Name*">
+                <input type="text" placeholder="Email*">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message*"></textarea>                
+            </form>
+            <a href="#" class="btn">SUBMIT</a>
+            <a href="#" class="closebtn" id="closebtn">x</a>    
+        </div>           
+    </section>
+    <script>
+        var mostrarmodal = document.getElementById("modal");
+        var cerrar = document.getElementById("closebtn");
+        var btnejecutar = document.getElementById("show");
+        var btnejecutar2 = document.getElementById("show2");
+ 
+        btnejecutar.onclick = function () {
+            mostrarmodal.style.display = "inline";
+        }
+        btnejecutar2.onclick = function () {
+            mostrarmodal.style.display = "inline";
+        }
+        cerrar.onclick = function () {
+            mostrarmodal.style.display = "none";
+        }
+ 
+        window.onclick = function (event) {
+            if(event.target == mostrarmodal){
+                mostrarmodal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
