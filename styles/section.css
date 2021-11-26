@@ -1,15 +1,16 @@
 section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: stretch;
+    align-items: stretch;
+    border-bottom: var(--primary-color) 45px solid;
 }
 section .info {
     background-color: white;
     width: 50%;
 }
-section .team {
-    background-color: #F7F7F7;
+section .team {/* 
+    background-color: #F7F7F7; */
     width: 50%;
 }
 section .limite {
@@ -57,6 +58,7 @@ section .articulos {
 }
 @media (max-width:480px) {
     section {
+        border-bottom: var(--primary-color) 45px solid;
         display: flex;
         flex-direction: column;
         justify-content: center;
